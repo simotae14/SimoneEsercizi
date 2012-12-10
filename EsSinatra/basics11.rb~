@@ -1,0 +1,20 @@
+#encoding: utf-8
+=begin
+Scrivo un programma che mi cattura un messaggio che digito
+e che lo cripta in un altro file particolare, avrò quindi
+questo file ruby coi metodi get e post e un file
+views/secret che conterrà codice html
+=end
+require 'sinatra'
+get '/secret' do #ciò che prende
+  erb :secret
+end
+post '/secret' do
+  params[:secret].reverse #ciò che produce
+end
+get '/decrypt/:secret' do  
+  params[:secret].reverse  
+end
+not_found do  
+  halt 404, 'page not found'  
+end

@@ -1,0 +1,15 @@
+#encoding: utf-8
+puts "Conto i miei polli:"
+puts "Hens", 25 + 30 / 6
+puts "Roosters", 100 - 25 * 3 % 4
+puts "Ora conto le uova:"
+puts 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6
+puts "E' vero che 3 + 2 < 5 - 7?"
+puts 3 + 2 < 5 - 7
+puts "Quant'è 3 + 2?", 3 + 2
+puts "Quant'è 5 - 7?", 5 - 7
+puts "Ah, ecco perchè era falso."
+puts "Che ne dici di altre."
+puts "E' maggiore?", 5 > -2
+puts "E' maggiore o uguale?", 5 >= -2
+puts "E' minore o uguale?", 5 <= -2

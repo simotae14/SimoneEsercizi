@@ -1,0 +1,23 @@
+#encoding: utf-8
+dieci_cose = "Mele Arance Corvi Telefono Luce Zucchero"
+puts "Aspetta, non ci sono dieci cose in questa lista, correggiamola."
+roba = dieci_cose.split(' ')#metodo che divide la stringa in
+#parole eliminando i caratteri bianchi e mette queste parole
+#in un array
+altra_roba = %w(Giorno Notte Canzone Frisbee Mais Banana Ragazza Ragazzo)
+while roba.length != 10
+  prossimo = altra_roba.pop()#il pop mi estrae ultimo ele da altra_roba
+  puts "Aggiungi: #{prossimo}"
+  roba.push(prossimo)#il push mi aggiunge il nuovo ele in fondo all'array
+  puts "Ci sono #{roba.length} elementi ora."
+end
+
+puts "Ora ci siamo: #{roba.join}"
+
+puts "Facciamo qualcosa con sta roba."
+
+puts roba[1]
+puts roba[-1]
+puts roba.pop()
+puts roba.join(' ') #ricrea la stringa ogni ele distanziato da spazio vuoto
+puts roba.values_at(3,5).join('#')#unisce i valori alla posizione 3 e 5 e li unisce col caratter # come distanziatore 

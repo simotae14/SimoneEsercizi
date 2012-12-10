@@ -1,0 +1,13 @@
+#encoding: utf-8
+file_prov, file_dest = ARGV
+script = $0
+puts "Copia da #{file_prov} a #{file_dest}"
+indata = File.open(file_prov).read()
+puts "Il file di input è di #{indata.length} byte"
+puts "Esiste il file dove copieremo? #{File.exists? file_dest}"
+puts "Sei pronto, prmi RETURN per continuare, CTRL-C per abbandonare."
+STDIN.gets
+output = File.open(file_dest, 'w')
+output.write(indata)
+puts "Ok, abbiam fatto tutto."
+output.close()

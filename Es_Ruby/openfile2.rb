@@ -1,0 +1,1 @@
+IO.foreach("prova123.txt") {|linea| puts linea}

@@ -1,0 +1,9 @@
+#encoding: utf-8
+=begin
+http://localhost:4567/
+primo esercizio sull'uso di sinatra
+=end
+require 'sinatra'
+get '/about' do
+  "Ecco un pò di me."
+end
